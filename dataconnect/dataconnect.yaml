@@ -1,0 +1,12 @@
+specVersion: "v1"
+serviceId: "abductions"
+location: "europe-west1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "postgres"
+      cloudSql:
+        instanceId: "smoke-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
